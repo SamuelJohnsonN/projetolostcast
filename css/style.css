@@ -1,0 +1,292 @@
+/* ========================== Reset ====================*/
+*{
+    margin: 0; 
+    padding: 0; 
+    font-size: 100%; 
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;    
+}
+
+nav, ul, li {    
+    list-style: none;
+}
+
+/* =================== hr =================*/
+hr {
+    width: 280px; 
+    height: 2px; 
+    border: none; 
+    margin-bottom: 70px;    
+    background-color: black;    
+
+}
+/* ================== Font ==============*/
+.fontBebas {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.3rem;
+}
+/* ========================== Header ====================*/
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 7% 0 7%; 
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.menus ul{
+    display: flex; 
+    justify-content: center;   
+    font-size: 1.2rem;    
+    
+
+}
+.menus li { padding-right: 50px;}
+.menus li a {color: black;}
+.menus li a:hover {color: rgb(102, 97, 97);}
+.menus li:last-child { padding-right: 0;}
+
+@media screen and (max-width: 900px) {
+    .cabecalho {flex-direction: column;}
+    .menus ul{ margin-top: 10px;}
+    
+}
+
+@media screen and (max-width: 480px) {
+    .menus li {padding-right: 20px}
+    .menus ul{font-size: 1rem;}
+}
+@media screen and (max-width: 360px) {        
+    .menus li a {letter-spacing: 0.2rem;}
+}
+/* =================== IMAGEM PRINCIPAL ================= */
+
+.imagem-principal {
+    background-image: url('../imagens/imagem-principal.jpg');
+    min-height: 80vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    color: #fff;
+}
+.imagem-principal p {
+    margin-top: 50px;
+    margin-left: 4%;
+    font-size: 3rem;
+    background-color: black;
+}
+.imagem-principal p:first-child{ margin-top:0;}
+
+@media screen and (max-width: 584px) {
+    .imagem-principal p {
+        font-size: 2.3rem;
+    }
+    
+}
+@media screen and (max-width: 472px) {
+    .imagem-principal p {
+        font-size: 2.3rem;
+        background-color: rgba(0, 0, 0, 0.0);
+        margin-left: 0;
+        width: 100%;
+        text-shadow: 1px 1px 5px black;
+    }
+    .imagem-principal {
+        text-align: center;
+        align-items:center;
+    }
+    
+}
+/* ========================== Texto Principal =============*/
+
+
+.texto {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;    
+}
+
+.texto h3 {font-size: 2rem; margin: 70px 3% 20px 3%;}
+.texto-principal h3 a {color:rgb(14, 56, 14);}
+.texto p {
+    font-size: 1.4rem; 
+    margin: 20px 3% 40px 3%; 
+    padding: 0 30px 0 30px; 
+     
+}
+
+
+/* =================== Corpo ==========================*/
+
+.secao-artigos-genericos {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.secao-artigos-genericos h4 { font-size: 1.3em; margin-top: 15%; letter-spacing: 0.1rem;} 
+.secao-artigos-genericos p{margin-top: 7%; font-size: 1.2rem;}    
+
+.div-artigos-genericos {  
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;    
+   width: 100%;
+}
+.artigos-genericos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.artigos-genericos img {
+    border-radius: 1%;   
+}
+
+.artigos-genericos a {color: black;}
+.artigos-genericos a:hover{color: rgb(102, 97, 97);}
+
+@media screen and (max-width:400px) { 
+    .artigos-genericos {
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width:380px) { 
+    .artigos-genericos {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .artigos-genericos img {
+        width: 100%;
+    }
+}
+/* =================== Botão Ver mais ==============*/
+.btn {    
+    width: 270px;
+    height: 60px;
+    background-color: black;
+    border-radius: 2%;
+    box-shadow: 3px 0 3px #888888;
+    margin-bottom: 5%;
+}
+.btn-verMais { 
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    height: 100%;
+    color: #fff;   
+       
+}
+
+#p-btn {margin: 0;}
+.btn-verMais i {padding-right: 10px;}
+.btn:hover { background-color: #777777; transition-duration: 1s;}
+.btn:active {box-shadow: none; background-color: #777777;}
+
+/* =================== Banner ==============*/
+
+.banner {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;    
+    background-clip: content-box;
+    background-size: cover;   
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    border-top: 8px solid #e7e6e6;
+    border-bottom: 8px solid #e7e6e6;
+    box-shadow: 1px 0px 5px rgb(88, 87, 87);
+}
+
+.banner p {       
+    letter-spacing: 0.3rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+.banner span {color: rgb(146, 39, 39);}
+@media screen and (max-width:800px) { 
+    .banner {
+        flex-grow: 1;
+    }
+}
+
+/* =================== Newsletter   =================*/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    width: 100%;
+}
+
+.newsletter h3 {font-size: 2rem; margin-bottom: 35px; color: black; text-align: center;}
+.newsletter p {max-width: 800px; margin-bottom: 35px; color:black; text-align: center; }
+.newsletter hr {
+    width: 200px; 
+    height: 2px; 
+    background-color: black; 
+    margin-bottom: 70px; 
+    border: none;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+.newsletter input {    
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right: 15px;  
+    flex: 1;  
+}
+.newsletter button {
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .newsletter input {flex-basis: 100%; margin-bottom: 15px;}
+    .newsletter form {width: 100%;}
+}
+
+/* =================== Footer   =================*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #191c03;
+    padding: 50px 0 ;
+    align-items: center;
+    width: 100%;
+}
+footer ul {display: flex; margin-bottom: 25px;}
+footer ul li {margin-right: 20px;}
+footer ul li:last-child {margin-right: 0;}
+footer ul li a {color: #fff; font-size: 3rem;}
+footer p {color: #fff; text-align: center;}
