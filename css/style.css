@@ -132,7 +132,7 @@ hr {
     width: 100%;
     
 }
-.secao-artigos-genericos h4 { font-size: 1.3em; margin-top: 15%; letter-spacing: 0.1rem;} 
+.secao-artigos-genericos h4 {width:95%; font-size: 1.3em; margin-top: 15%; letter-spacing: 0.1rem;} 
 .secao-artigos-genericos p{margin-top: 7%; font-size: 1.2rem;}    
 
 .div-artigos-genericos {  
@@ -169,8 +169,9 @@ hr {
         padding: 0px;
     }
     .artigos-genericos img {
-        width: 100%;
+        width: 90%;
     }
+    .artigos-genericos h4 {width:95%; align-self: center;}
 }
 /* =================== Botão Ver mais ==============*/
 .btn {    
